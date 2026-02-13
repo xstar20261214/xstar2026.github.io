@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的专属个人主页</title>
+    <style>
+        /* 全局重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", "PingFang SC", sans-serif;
+        }
+        /* 页面背景：温柔渐变 */
+        body {
+            background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+            color: #555;
+            min-height: 100vh; /* 铺满整个屏幕 */
+            padding: 20px;
+        }
+        /* 主体卡片：加圆角、阴影、内边距 */
+        .container {
+            max-width: 700px;
+            margin: 40px auto; /* 上下留空，居中显示 */
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px; /* 更圆润的边角 */
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08); /* 柔和阴影 */
+            border: 1px solid #f0f0f0; /* 浅边框 */
+        }
+        /* 头像区域 */
+        .avatar {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .avatar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* 圆形头像 */
+            border: 4px solid #f5f5f5;
+            object-fit: cover;
+        }
+        /* 标题样式 */
+        h1 {
+            color: #f9d59b; /* 温柔的橙色 */
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: 500;
+            font-size: 28px;
+        }
+        /* 副标题 */
+        .subtitle {
+            text-align: center;
+            color: #999;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        /* 信息模块：加背景、圆角（优化对比度） */
+        .info {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff8ee; /* 浅橙背景，文字更清晰 */
+            border-radius: 12px;
+            line-height: 1.8;
+        }
+        .info p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+        /* 强调文字（修正颜色，和背景区分） */
+        .info p span {
+            color: #e69850; /* 深一点的橙，更突出 */
+            font-weight: 500;
+        }
+        /* 引用语：斜体+颜色（优化边框） */
+        .motto {
+            text-align: center;
+            margin: 30px auto;
+            font-style: italic;
+            color: #777;
+            font-size: 18px;
+            padding: 10px;
+            border-left: 3px solid #f9d59b; /* 统一橙色边框 */
+            margin-left: 20px;
+            margin-right: 20px;
+         <div class="hobby" style="margin: 20px 0; padding: 15px; border-radius: 12px; background: #fff8ee;">
+    <p style="color: #e69850; font-weight: 500; margin-bottom: 10px;">❤️ 我的小爱好：</p>
+    <p>听歌、学前端、记录生活、和朋友聊天～</p>
+</div>
+        }
+        /* 底部版权 */
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #bbb;
+            font-size: 14px;
+            padding-top: 20px;
+            border-top: 1px solid #f9d59b;
+        }
+        .info {
+    transition: transform 0.3s ease; /* 新增：过渡动画 */
+}
+.info:hover {
+    transform: translateY(-5px); /* 鼠标悬浮上浮5px */
+    box-shadow: 0 4px 12px rgba(249,213,155,0.2); /* 轻微阴影 */
+}
+        /* 移动端适配 */
+        @media (max-width: 500px) {
+            .container {
+                padding: 25px 15px;
+                margin: 20px auto;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .avatar img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头像：替换为在线图（本地路径浏览器无法访问） -->
+        <div class="avatar">
+            <img src="d:\小狐狸🦊（有胡须版）_1_小白珠珠_来自小红书网页版.jpg" alt="我的头像">
+        </div>
+        
+        <!-- 标题：改昵称 -->
+        <h1>你好，我是羡</h1>
+        <div class="subtitle">零基础做的第一个网页 ✨</div>
+        
+        <!-- 个人信息：改内容 -->
+        <div class="info">
+            <p><span>✨ 制作时间：</span>2026年</p>
+            <p><span>📝 学习目标：</span>学前端，每天进步一点点</p>
+            <p><span>❤️ 小感悟：</span>原来做网页一点都不难！</p>
+        </div>
+        
+        <!-- 座右铭：改文字 -->
+        <div class="motto">
+            慢慢来，会更快 —— 我的专属小语录
+        </div>
+        
+        <footer>
+            我的个人主页 | 零基础入门制作 © 2026
+        </footer>
+    </div>
+
+</body>
+</html>
